@@ -1,0 +1,19 @@
+@import "common";
+@import "variable";
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+// photos-sec
+
+.photos {
+    width: 840px;
+    margin-top: -40px;
+}
+
+.photos-container-item {
+    column-count: 2;
+}

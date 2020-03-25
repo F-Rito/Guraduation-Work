@@ -1,0 +1,210 @@
+@import "common";
+@import "variable";
+
+// top
+.top {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    &__img > img {
+        width: 1100px;
+        height: 650px;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 85px;
+        letter-spacing: .05em;
+    }
+    // 画像上の文字色を変える
+    &__text-left ,
+    &__text-right {
+        position: absolute;
+        top: 140px;
+        left: 975px;
+        width: 500px;
+        height: 300px;
+    }
+    &__text-left {
+        overflow: hidden;
+        width: calc(1100px - 980px);
+        height: calc(650px - 300px);
+    }
+    &__text-left-color {
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        height: 300px;
+        color: #fff;
+    }
+}
+
+// work
+.work-sec {
+    margin-top: 200px;
+}
+.work {
+    text-align: center;
+}
+.work-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    &-text-area__text {
+        padding: 0 80px 8px 24px;
+        text-align: left;
+        font-size: $textFont;
+        line-height: 1.6;
+        letter-spacing: .05em;
+    }
+    &-img-area {
+        box-sizing: border-box;
+    }
+    &-largeImg-area > p > img {
+        width: 568px;
+        height: 326px;
+    }
+    &-smallImg-area {
+        display: flex;
+        &__photo {
+            box-sizing: border-box;
+            width: 280px;
+            height: 163px;
+            margin-top: 8px;
+        }
+        &__photo-left {
+            margin-right: 4px;
+        }
+        &__photo-right {
+            margin-left: 4px;
+        }
+    }
+}
+
+// work-photo
+.work-photo-sec {
+    margin-top: 200px;
+}
+.work-photo {
+    text-align: center;
+}
+.work-photo-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    &-group > a {
+        display: block;
+    }
+    &-group__caption {
+        margin-top: 8px;
+        color: #000;
+        text-align-last: left;
+        text-decoration: none;
+        font-size: $textFont;
+        letter-spacing: .1em;
+        &:hover {
+            opacity: .6;
+            transition: .3s;
+        }
+    }
+    &-group__img {
+        width: 360px;
+        height: 240px;
+        &:hover {
+            opacity: .6;
+            transition: .3s;
+        }
+    }
+    &-group:nth-child(2) {
+        padding-top: 56px;
+    }
+    &-group:nth-child(3) {
+        padding-top: 112px;
+    }
+    &-bottom {
+        margin-top: 40px;
+    }
+}
+
+// staff
+.staff-sec {
+    width: 750px;
+    margin: 200px auto;
+}
+.staff {
+    &__heading {
+        text-align: center;
+    }
+    &-group {
+        margin-top: 80px;
+    }
+    &-group-top {
+        display: flex;
+        align-items: center;
+        &-text {
+            padding-left: 56px;
+        }
+    }
+    &-group-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 96px;
+    }
+    &-group__avatar {
+        width: 350px;
+        height: 350px;
+    }
+    &-group-text {
+        font-size: $textFont;
+        line-height: 1.6;
+        letter-spacing: .05em;
+        &__info {
+            font-size: 20px;
+        }
+        &__info-name {
+            padding-left: 8px;
+            font-weight: bold;
+        }
+        &__hobby {
+            padding-top: 56px;
+        }
+        &__hobby-text {
+            padding-top: 16px;
+        }
+    }
+}
+
+// answer
+.answer-sec {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.answer {
+    text-align: center;
+    &__heading {
+        margin-bottom: 32px;
+    }
+    &-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-group-text {
+        margin-top: 56px;
+        & > p {
+            text-align: left;
+            font-size: $textFont;
+            letter-spacing: .1em;
+        }
+        &__mark {
+            padding-right: 8px;
+            font-size: 16px;
+        }
+        &__answer {
+            margin: 32px 8px 0 32px;
+        }
+    }
+}

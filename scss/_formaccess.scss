@@ -1,0 +1,29 @@
+@import "common";
+@import "variable";
+
+// formaccess
+.form-access-sec {
+    padding-top: 200px;
+}
+.form-access {
+    padding: 80px;
+    background-color: #ededed;
+    text-align: center;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__inner-text {
+        text-align-last: left;
+        font-size: $textFont;
+        line-height: 30px;
+        letter-spacing: .1em;
+    }
+    &__inner-form-btn {
+        padding: 48px 56px;
+        font-size: 1.8rem;
+
+@extend %link-btn;
+    }
+}

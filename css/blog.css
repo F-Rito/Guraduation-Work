@@ -1,0 +1,70 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; }
+
+a {
+  cursor: pointer; }
+
+.wrap {
+  width: 1120px;
+  margin: 0 auto; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 200px; }
+
+.fa-angle-right {
+  margin-left: 10px; }
+
+.title {
+  display: inline-block;
+  margin-bottom: 80px;
+  font-size: 2rem;
+  letter-spacing: 2px; }
+  .title::after {
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #333;
+    content: ""; }
+
+.heading {
+  font-weight: bold;
+  font-size: 2rem; }
+
+.page-title {
+  letter-spacing: 1.2px; }
+
+.post-sec {
+  margin-top: -72px; }
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 72px; }
+  .post-group {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 24px; }
+    .post-group__img {
+      width: 350px;
+      height: 230px; }
+    .post-group > p {
+      font-size: 1.5rem; }
+    .post-group__date {
+      padding-top: 16px; }
+    .post-group__text {
+      padding-top: 8px; }

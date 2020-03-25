@@ -1,0 +1,87 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; }
+
+a {
+  cursor: pointer; }
+
+.wrap {
+  width: 1120px;
+  margin: 0 auto; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 160px; }
+
+.fa-angle-right {
+  margin-left: 10px; }
+
+.title {
+  display: inline-block;
+  margin-bottom: 80px;
+  font-size: 2rem;
+  letter-spacing: .3em; }
+  .title::after {
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #333;
+    content: ""; }
+
+.heading {
+  font-weight: bold;
+  font-size: 2rem; }
+
+.input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee; }
+  .input:focus {
+    outline: none; }
+
+.pagination {
+  margin-top: 56px; }
+  .pagination > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .pagination > ul > li > span {
+    opacity: .6; }
+  .pagination > ul > li > a:hover {
+    opacity: .6;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.page-numbers {
+  margin: 0 8px;
+  color: #000;
+  text-decoration: none;
+  font-size: 15px; }
+
+.blog-post {
+  margin-left: 24px;
+  text-align: left; }
+  .blog-post__title {
+    font-size: 2rem;
+    letter-spacing: .1em; }
+  .blog-post-texts {
+    width: 750px;
+    margin-top: 56px;
+    font-size: 1.5rem;
+    letter-spacing: .05; }

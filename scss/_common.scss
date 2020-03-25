@@ -1,0 +1,170 @@
+@import "variable";
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+// top
+.top {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    &__img > img {
+        width: 1095px;
+        height: 650px;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 6rem;
+        line-height: 85px;
+        letter-spacing: 2.5px;
+    }
+    // 画像上の文字色を変える
+    &__text-left ,
+    &__text-right {
+        position: absolute;
+        top: 140px;
+        left: 975px;
+        width: 500px;
+        height: 300px;
+    }
+    &__text-left {
+        overflow: hidden;
+        width: calc(1100px - 980px);
+        height: calc(650px - 300px);
+    }
+    &__text-left-color {
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        height: 300px;
+        color: #fff;
+    }
+}
+
+
+// wrap
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+// container
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+
+// linkのicon
+.fa-angle-right {
+    margin-left: 10px;
+}
+
+// title
+.title {
+    display: inline-block;
+    margin-bottom: 80px;
+    font-size: $titleFont;
+    letter-spacing: .3em;
+    &::after {
+        display: block;
+        width: 50%;
+        height: 3px;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: #333;
+        content: "";
+    }
+}
+
+
+// heading
+.heading {
+    font-weight: bold;
+    font-size: $titleFont;
+}
+
+// input select textarea
+.input {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    &:focus {
+        outline: none;
+    }
+}
+
+// ページタイトル
+.page-title {
+    letter-spacing: .03em;
+}
+
+
+// ページャー
+.pagination {
+    margin-top: 56px;
+    & > ul {
+        display: flex;
+        justify-content: center;
+    }
+    & > ul > li > span {
+        opacity: .6;
+    }
+    & > ul > li > a:hover {
+        opacity: .6;
+        transition: .3s;
+    }
+}
+.page-numbers {
+    margin: 0 8px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+// @extend用
+// グローバルナビゲーション
+%nav {
+    margin-left: 64px;
+    text-decoration: none;
+    font-size: $linkFont;
+}
+
+// .lead, .text などテキスト
+%text {
+    font-size: $textFont;
+    line-height: 1.6;
+}
+
+// ページ移動のbutton
+%link-btn {
+    display: inline-block;
+    width: 250px;
+    padding: 32px 0;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: $linkFont;
+    letter-spacing: .1em;
+    &:hover {
+        border: 1px solid #4f4f4f;
+        background-color: #4f4f4f;
+        color: #fff;
+        transition: .6s;
+    }
+}

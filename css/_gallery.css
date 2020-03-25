@@ -1,0 +1,126 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; }
+
+a {
+  cursor: pointer; }
+
+.top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .top__img > img {
+    width: 1095px;
+    height: 650px; }
+  .top__text {
+    font-weight: normal;
+    font-size: 6rem;
+    line-height: 85px;
+    letter-spacing: 2.5px; }
+  .top__text-left, .top__text-right {
+    position: absolute;
+    top: 140px;
+    left: 975px;
+    width: 500px;
+    height: 300px; }
+  .top__text-left {
+    overflow: hidden;
+    width: calc(1100px - 980px);
+    height: calc(650px - 300px); }
+  .top__text-left-color {
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    height: 300px;
+    color: #fff; }
+
+.wrap {
+  width: 1100px;
+  margin: 0 auto; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 160px; }
+
+.fa-angle-right {
+  margin-left: 10px; }
+
+.title {
+  display: inline-block;
+  margin-bottom: 80px;
+  font-size: 2rem;
+  letter-spacing: .3em; }
+  .title::after {
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #333;
+    content: ""; }
+
+.heading {
+  font-weight: bold;
+  font-size: 2rem; }
+
+.input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee; }
+  .input:focus {
+    outline: none; }
+
+.page-title {
+  letter-spacing: .03em; }
+
+.pagination {
+  margin-top: 56px; }
+  .pagination > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .pagination > ul > li > span {
+    opacity: .6; }
+  .pagination > ul > li > a:hover {
+    opacity: .6;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.page-numbers {
+  margin: 0 8px;
+  color: #000;
+  text-decoration: none;
+  font-size: 15px; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 200px; }
+
+.photos {
+  width: 840px;
+  margin-top: -40px; }
+
+.photos-container-item {
+  -webkit-column-count: 2;
+  column-count: 2; }
